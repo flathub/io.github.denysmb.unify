@@ -30,8 +30,8 @@
         {
           "type": "git",
           "url": "https://github.com/DenysMb/Unify.git",
-          "tag": "0.3.1",
-          "commit": "b3d051c7276d55a5d7bd51816a9a9736474ce363"
+          "tag": "0.4.0",
+          "commit": "c47d5081a2c0a511f3ee5acc8e479359e562e53b"
         }
       ]
     }
