@@ -19,19 +19,23 @@
     "--env=QTWEBENGINEPROCESS_PATH=/app/bin/QtWebEngineProcess",
     "--env=QTWEBENGINE_CHROMIUM_FLAGS=--autoplay-policy=no-user-gesture-required --enable-features=WebRTCPipeWireCapturer --enable-widevine-cdm --disable-gpu --disable-gpu-compositing --disable-features=VizDisplayCompositor"
   ],
-  "cleanup": ["/app/cleanup-BaseApp.sh"],
+  "cleanup": [
+    "/app/cleanup-BaseApp.sh"
+  ],
   "modules": [
     {
       "name": "unify",
       "buildsystem": "cmake-ninja",
-      "config-opts": ["-DCMAKE_BUILD_TYPE=Release"],
+      "config-opts": [
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
       "builddir": true,
       "sources": [
         {
           "type": "git",
           "url": "https://github.com/DenysMb/Unify.git",
-          "tag": "0.5.0",
-          "commit": "7812e7ec577f645d4ef472215940270429d21246"
+          "tag": "0.5.1",
+          "commit": "49160b90a2cb70a98f7a5ffccf2426e438817094"
         }
       ]
     }
