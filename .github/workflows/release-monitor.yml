@@ -70,7 +70,7 @@ jobs:
         if: steps.check_update.outputs.needs_update == 'true'
         uses: peter-evans/create-pull-request@v6
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PAT }}
           commit-message: |
             chore: release ${{ steps.latest_release.outputs.latest_tag }}
 
